@@ -6,13 +6,13 @@ import java.util.Scanner;
 public class App {
     public static void main(String[] args){
         Scanner money = new Scanner(System.in);
-        System.out.print("Enter the principal: ");
+        System.out.print("What is the principle amount? ");
         double principal = money.nextDouble();
-        System.out.print("Enter the rate of interest: ");
+        System.out.print("What is the rate? ");
         double rate = money.nextDouble();
-        System.out.print("Enter the number of years: ");
+        System.out.print("What is the number of years? ");
         int year = money.nextInt();
-        System.out.print("What is the number of times the interest is compoundedper year: ");
+        System.out.print("What is the number of times the interest is compounded per year? ");
         int compound = money.nextInt();
 
         double total = principal * Math.pow((1 + ((rate / 100)) / compound), (compound * year));
